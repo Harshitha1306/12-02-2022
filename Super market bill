@@ -1,0 +1,34 @@
+cname=input('enter name:')
+cphno=int(input('enter phone no:'))
+Vim=120
+Rin=120
+Flour=110
+Cashew nuts=150
+oil=150
+Vq=int(input('enter no. of  packets'))
+Rrq=int(input('enter no. of rin packets'))
+Fq=int(input('enter no. of Flour packets'))
+Cq=int(input('enter no. of cashew nut packets'))
+oq=int(input('enter no. of oil packets'))
+bill=(Vim*Vq+Rin*Rq+Flour*Fq+Cashew nuts*Cq+oil*oq)
+if bill>5000:
+    dis=5000*10/100
+     Tax=bill*10/100
+elif bill>4000:
+    dis=4000*8/100
+    Tax=bill*10/100
+elif bill>3000:
+    dis=3000*5/100
+    Tax=bill*10/100
+elif bill>2000:
+    dis=2000*3/100
+    Tax=bill*18/100
+elif bill>1000:
+    dis=1000*2/100
+     Tax=bill*18/100
+else:
+    print('invalid code')
+print('bill',bill)
+print('discount',dis)
+mainbill=bill-dis
+print('mainbill : ',mainbill)
