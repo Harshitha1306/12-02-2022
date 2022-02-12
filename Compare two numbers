@@ -1,0 +1,10 @@
+a=int(input())
+b=int(input())
+if a==b:
+    print('equal')
+elif a!=b and a>b:
+    print('a is not equal a is greater than b')
+elif a!=b and a<b:
+    print('a is not equal a is less than b')
+else:
+    print('nothing')
